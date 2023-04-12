@@ -32,7 +32,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@actions/github@npm:^5.0.3, @actions/github@npm:^5.1.1":
+"@actions/github@npm:^5.1.1":
   version: 5.1.1
   resolution: "@actions/github@npm:5.1.1"
   dependencies:
@@ -3962,13 +3962,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nx-dotnet/core@npm:^1.21.1":
-  version: 1.21.1
-  resolution: "@nx-dotnet/core@npm:1.21.1"
+"@nx-dotnet/core@npm:^1.22.0":
+  version: 1.22.0
+  resolution: "@nx-dotnet/core@npm:1.22.0"
   dependencies:
     "@nrwl/devkit": 15.8.5
-    "@nx-dotnet/dotnet": 1.21.1
-    "@nx-dotnet/utils": 1.21.1
+    "@nx-dotnet/dotnet": 1.22.0
+    "@nx-dotnet/utils": 1.22.0
     fast-glob: 3.2.11
     inquirer: 8.2.2
     rimraf: 3.0.2
@@ -3984,13 +3984,13 @@ __metadata:
       optional: true
     eslint:
       optional: true
-  checksum: 351a32700bebaed22372d368deac1abe54ad93f8e57f90ac5aa2e669a5f44a607c8f09e839ec2f0fdd9be1921d4fbb0271561f63ac6285903ff5630b15c44708
+  checksum: 8cd7616b8ce97c82f95c40acbbcaef0a215354ac8b911a870a59b296c1a8134886f2e06038ecd7802b84098697f667002acd240e7fc1df81bcaaed659b3bde4b
   languageName: node
   linkType: hard
 
-"@nx-dotnet/dotnet@npm:1.21.1":
-  version: 1.21.1
-  resolution: "@nx-dotnet/dotnet@npm:1.21.1"
+"@nx-dotnet/dotnet@npm:1.22.0":
+  version: 1.22.0
+  resolution: "@nx-dotnet/dotnet@npm:1.22.0"
   dependencies:
     "@nrwl/devkit": 15.8.5
     fast-glob: 3.2.11
@@ -3998,20 +3998,20 @@ __metadata:
     semver: 7.3.7
     xmldoc: 1.1.2
   peerDependencies:
-    "@nx-dotnet/utils": 1.21.1
-  checksum: 2b24ce69f0492cab97c1842a90a1613ea34c6d77adc677a4cfe79756b4906e329ba638962aa920d28e281b0f62cef9de8626245b7593cca8eb3e521575e74a5d
+    "@nx-dotnet/utils": 1.22.0
+  checksum: ccf04290f25f63d94e90aaf34d76a70a5145556d1b623777286bee0a29384376842ba525ef66c5c3ce59613f1b1da6af2e721e13dc1d948f69290d9c1b6a5b2d
   languageName: node
   linkType: hard
 
-"@nx-dotnet/utils@npm:1.21.1":
-  version: 1.21.1
-  resolution: "@nx-dotnet/utils@npm:1.21.1"
+"@nx-dotnet/utils@npm:1.22.0":
+  version: 1.22.0
+  resolution: "@nx-dotnet/utils@npm:1.22.0"
   dependencies:
     "@nrwl/devkit": 15.8.5
     fast-glob: 3.2.11
     rimraf: 3.0.2
     xmldoc: 1.1.2
-  checksum: b63c4d493f496eda570acf6cb642a22984ad6212a043ecdb55333abd8208afeb6caf2c00151f80c5235a7b456927e0247aa4accce740c78f771536df9163a49a
+  checksum: 30117da16588e616056edfa00b5d3a73888bed0caaade3904a0d923a75e93102f39294bd9c8f1efc010c1250ec93312695def7a462c52a5ee8d8c82528bd8e0d
   languageName: node
   linkType: hard
 
@@ -4104,20 +4104,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nx-tools/ci-context@npm:^3.0.8":
-  version: 3.0.8
-  resolution: "@nx-tools/ci-context@npm:3.0.8"
-  dependencies:
-    "@actions/github": ^5.0.3
-    "@nx-tools/core": ^3.0.8
-    "@swc/helpers": ^0.4.3
-    ci-info: ^3.3.2
-  peerDependencies:
-    tslib: ^2.1.0
-  checksum: 20e1e36dbbdadedab67be891f5e8f7c9e8546fc65fbd8bac6031bfe612c6ed9501c68e64cb87b68e13eaa32e3bbc2feb9b734599300c2171bac518c5ff829444
-  languageName: node
-  linkType: hard
-
 "@nx-tools/container-metadata@npm:^4.0.3":
   version: 4.0.3
   resolution: "@nx-tools/container-metadata@npm:4.0.3"
@@ -4147,38 +4133,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nx-tools/core@npm:^3.0.8":
-  version: 3.0.8
-  resolution: "@nx-tools/core@npm:3.0.8"
-  dependencies:
-    "@actions/exec": ^1.1.1
-    "@swc/helpers": ^0.4.3
-    colorette: ^2.0.19
-  peerDependencies:
-    "@nrwl/devkit": ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0
-  checksum: d796e33b097ce52c58637358fdc906ec07c65a4f51a21e897676e6c34dd7f1296abd2813977565eeb9cadf340ea871b5bc2db43f95e28293eae8c9f52c72bb1e
-  languageName: node
-  linkType: hard
-
-"@nx-tools/docker-metadata@npm:^3.0.8":
-  version: 3.0.8
-  resolution: "@nx-tools/docker-metadata@npm:3.0.8"
-  dependencies:
-    "@nx-tools/ci-context": ^3.0.8
-    "@nx-tools/core": ^3.0.8
-    "@renovate/pep440": ^1.0.0
-    "@swc/helpers": ^0.4.3
-    csv-parse: ^4.16.3
-    handlebars: ^4.7.7
-    moment: ^2.29.4
-    semver: ^7.3.7
-  peerDependencies:
-    "@nrwl/devkit": ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0
-    tslib: ^2.1.0
-  checksum: df97c164ef0a850371b7c39c0af54a892ba64536a5ea99ce8681523e060be3d5eaa773f4b0a64eac2121582c0196e7d5b5d17990527ca8c1f7c4cf4e8df6c75b
-  languageName: node
-  linkType: hard
-
 "@nx-tools/nx-container@npm:^4.0.3":
   version: 4.0.3
   resolution: "@nx-tools/nx-container@npm:4.0.3"
@@ -4193,26 +4147,6 @@ __metadata:
     "@nrwl/devkit": ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0
     dotenv: ">=10.0.0"
   checksum: 3b133c46f90570382e833d8904b89e82877eebb90ec1adaa2bd7fd032556562e5cd0329322e30048fb1a8aa508b3596c2d4b76a00fb7e177db515d160e724f82
-  languageName: node
-  linkType: hard
-
-"@nx-tools/nx-docker@npm:^3.0.8":
-  version: 3.0.8
-  resolution: "@nx-tools/nx-docker@npm:3.0.8"
-  dependencies:
-    "@nx-tools/core": ^3.0.8
-    "@nx-tools/docker-metadata": ^3.0.8
-    "@swc/helpers": ^0.4.3
-    csv-parse: ^4.16.3
-    semver: ^7.3.7
-    tmp: ^0.2.1
-  peerDependencies:
-    dotenv: ">=10.0.0"
-    tslib: ^2.1.0
-  dependenciesMeta:
-    "@nx-tools/docker-metadata":
-      optional: true
-  checksum: 979c34e2cee0f7963836ea07b6e87bea8a57fd7a7eec6db71aed7155cd4416a1b0bbb5da5a2c9fe253718705b979d69ba2226474d48ba29e9b04e36b75bab2c1
   languageName: node
   linkType: hard
 
@@ -5107,7 +5041,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@swc/helpers@npm:0.4.14, @swc/helpers@npm:^0.4.12, @swc/helpers@npm:^0.4.3":
+"@swc/helpers@npm:0.4.14, @swc/helpers@npm:^0.4.12":
   version: 0.4.14
   resolution: "@swc/helpers@npm:0.4.14"
   dependencies:
@@ -5442,7 +5376,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest@npm:^29.4.0":
+"@types/jest@npm:^29.5.0":
   version: 29.5.0
   resolution: "@types/jest@npm:29.5.0"
   dependencies:
@@ -5706,7 +5640,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:^5.36.1":
+"@typescript-eslint/eslint-plugin@npm:^5.58.0":
   version: 5.58.0
   resolution: "@typescript-eslint/eslint-plugin@npm:5.58.0"
   dependencies:
@@ -6798,7 +6732,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:^1.0.0":
+"axios@npm:^1.0.0, axios@npm:^1.3.5":
   version: 1.3.5
   resolution: "axios@npm:1.3.5"
   dependencies:
@@ -7810,7 +7744,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ci-info@npm:^3.3.2, ci-info@npm:^3.5.0":
+"ci-info@npm:^3.5.0":
   version: 3.8.0
   resolution: "ci-info@npm:3.8.0"
   checksum: d0a4d3160497cae54294974a7246202244fff031b0a6ea20dd57b10ec510aa17399c41a1b0982142c105f3255aff2173e5c0dd7302ee1b2f28ba3debda375098
@@ -9796,7 +9730,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esbuild@npm:^0.17.5":
+"esbuild@npm:^0.17.16":
   version: 0.17.16
   resolution: "esbuild@npm:0.17.16"
   dependencies:
@@ -9915,14 +9849,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-prettier@npm:8.1.0":
-  version: 8.1.0
-  resolution: "eslint-config-prettier@npm:8.1.0"
+"eslint-config-prettier@npm:8.8.0":
+  version: 8.8.0
+  resolution: "eslint-config-prettier@npm:8.8.0"
   peerDependencies:
     eslint: ">=7.0.0"
   bin:
     eslint-config-prettier: bin/cli.js
-  checksum: 277b42e4d5b4a65dc8224a26b082373b846f7b2148dc342fd69f9f00ea36f58affacf7bbade3f2512295f371620b3d57380e27de32e492632b516c310ce51c04
+  checksum: 1e94c3882c4d5e41e1dcfa2c368dbccbfe3134f6ac7d40101644d3bfbe3eb2f2ffac757f3145910b5eacf20c0e85e02b91293d3126d770cbf3dc390b3564681c
   languageName: node
   linkType: hard
 
@@ -12816,7 +12750,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest-environment-node@npm:^29.4.1, jest-environment-node@npm:^29.5.0":
+"jest-environment-node@npm:^29.5.0":
   version: 29.5.0
   resolution: "jest-environment-node@npm:29.5.0"
   dependencies:
@@ -13392,7 +13326,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest@npm:^29.4.1":
+"jest@npm:^29.5.0":
   version: 29.5.0
   resolution: "jest@npm:29.5.0"
   dependencies:
@@ -15514,34 +15448,33 @@ __metadata:
     "@nrwl/web": ^15.9.2
     "@nrwl/webpack": ^15.9.2
     "@nrwl/workspace": 15.9.2
-    "@nx-dotnet/core": ^1.21.1
+    "@nx-dotnet/core": ^1.22.0
     "@nx-extend/terraform": ^0.0.4
     "@nx-go/nx-go": ^2.7.0
     "@nx-plus/nuxt": ^14.1.0
     "@nx-plus/vue": ^15.0.0-rc.0
     "@nx-tools/container-metadata": ^4.0.3
     "@nx-tools/nx-container": ^4.0.3
-    "@nx-tools/nx-docker": ^3.0.8
     "@nxtend/capacitor": ^13.0.0
     "@nxtend/ionic-angular": ^13.1.0
     "@nxtend/ionic-react": ^13.0.0
     "@theunderscorer/nx-semantic-release": ^2.3.0
     "@trumbitta/nx-plugin-openapi": ^1.12.1
     "@types/eslint": ^8.37.0
-    "@types/jest": ^29.4.0
+    "@types/jest": ^29.5.0
     "@types/node": 18.15.11
     "@types/yargs-parser": ^21.0.0
-    "@typescript-eslint/eslint-plugin": ^5.36.1
+    "@typescript-eslint/eslint-plugin": ^5.58.0
     "@typescript-eslint/parser": ^5.58.0
     "@yarnpkg/sdks": ^3.0.0-rc.42
-    axios: ^1.0.0
-    esbuild: ^0.17.5
+    axios: ^1.3.5
+    esbuild: ^0.17.16
     eslint: ^8.38.0
-    eslint-config-prettier: 8.1.0
+    eslint-config-prettier: 8.8.0
     fs-extra: ^11.1.1
     husky: ^8.0.3
-    jest: ^29.4.1
-    jest-environment-node: ^29.4.1
+    jest: ^29.5.0
+    jest-environment-node: ^29.5.0
     next: ^13.3.0
     ngx-deploy-npm: ^5.2.0
     nx: 15.9.2
@@ -15550,7 +15483,7 @@ __metadata:
     nx-plugin-workspace: ^0.5.5
     prettier: ^2.8.7
     prettier-eslint: ^15.0.1
-    ts-jest: ^29.0.5
+    ts-jest: ^29.1.0
     ts-node: 10.9.1
     tslib: ^2.5.0
     typescript: ~5.0.4
@@ -19558,7 +19491,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ts-jest@npm:^29.0.5":
+"ts-jest@npm:^29.1.0":
   version: 29.1.0
   resolution: "ts-jest@npm:29.1.0"
   dependencies:

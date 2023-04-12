@@ -2,6 +2,6 @@
 FROM node:lts-bullseye-slim as builder
 ARG NODE_ENV
 ARG BUILD_FLAG
-WORKDIR /app/builder
+WORKDIR /repo
 COPY ../../ .
 RUN yarn install
