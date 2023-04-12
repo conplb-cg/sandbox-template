@@ -1,0 +1,7 @@
+.yarn/cache
+node_modules
+dist
+tmp
+.vscode
+.vim
+.nx-container
