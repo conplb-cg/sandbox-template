@@ -1,29 +1,31 @@
 {
-  "name": "nx-base",
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/nx-base/src",
-  "projectType": "application",
-  "targets": {
-    "container": {
-      "executor": "@nx-tools/nx-container:build",
-      "options": {
-        "engine": "docker",
-        "context": ".",
-        "metadata": {
-          "images": ["prbservicesllc/nx-base"],
-          "load": true,
-          "no-cache": true,
-          "tags": [
-            "nx-base",
-            "type=schedule",
-            "type=ref,event=branch",
-            "type=ref,event=tag",
-            "type=ref,event=pr",
-            "type=sha,prefix=sha-"
-          ]
+    "name": "nx-base",
+    "$schema": "../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "apps/nx-base/src",
+    "projectType": "application",
+    "targets": {
+        "container": {
+            "executor": "@nx-tools/nx-container:build",
+            "options": {
+                "engine": "docker",
+                "file": "apps/nx-base/Dockerfile",
+                "metadata": {
+                    "images": [
+                        "prbservicesllc/nx-base"
+                    ],
+                    "load": true,
+                    "no-cache": true,
+                    "tags": [
+                        "nx-base",
+                        "type=schedule",
+                        "type=ref,event=branch",
+                        "type=ref,event=tag",
+                        "type=ref,event=pr",
+                        "type=sha,prefix=sha-"
+                    ]
+                }
+            }
         }
-      }
-    }
-  },
-  "tags": []
+    },
+    "tags": []
 }

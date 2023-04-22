@@ -5,3 +5,4 @@ ARG BUILD_FLAG
 WORKDIR /repo
 COPY ../../ .
 RUN yarn install
+RUN npx browserslist@latest --update-db
