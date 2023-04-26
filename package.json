@@ -24,6 +24,7 @@
         "@nx-tools/container-metadata": "^4.0.3",
         "@nx-tools/nx-container": "^4.0.3",
         "@trumbitta/nx-plugin-openapi": "^1.12.1",
+        "browserslist": "^4.21.5",
         "fs-extra": "^11.1.1",
         "nx": "15.9.2"
     },
