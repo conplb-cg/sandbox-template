@@ -1,31 +1,56 @@
 {
-    "name": "nx-base",
-    "$schema": "../../node_modules/nx/schemas/project-schema.json",
-    "sourceRoot": "apps/nx-base/src",
-    "projectType": "application",
-    "targets": {
-        "container": {
-            "executor": "@nx-tools/nx-container:build",
-            "options": {
-                "engine": "docker",
-                "file": "apps/nx-base/Dockerfile",
-                "metadata": {
-                    "images": [
-                        "prbservicesllc/nx-base"
-                    ],
-                    "load": true,
-                    "no-cache": true,
-                    "tags": [
-                        "nx-base",
-                        "type=schedule",
-                        "type=ref,event=branch",
-                        "type=ref,event=tag",
-                        "type=ref,event=pr",
-                        "type=sha,prefix=sha-"
-                    ]
-                }
-            }
+  "name": "nx-base",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/nx-base/src",
+  "projectType": "application",
+  "targets": {
+    "container": {
+      "executor": "@nx-tools/nx-container:build",
+      "options": {
+        "engine": "docker",
+        "load": true,
+        "metadata": {
+          "images": [
+            "prbservicesllc/nx-base"
+          ],
+          "no-cache": true,
+          "tags": [
+            "nx-base",
+            "type=schedule",
+            "type=ref,event=branch",
+            "type=ref,event=tag",
+            "type=ref,event=pr",
+            "type=sha,prefix=sha-"
+          ]
         }
-    },
-    "tags": []
+      },
+      "configurations": {
+        "lts": {
+          "file": "apps/nx-base/Dockerfile.lts",
+          "push": true,
+          "metadata": {
+            "images": [
+              "prbservicesllc/nx-base"
+            ],
+            "tags": [
+              "lts"
+            ]
+          }
+        },
+        "current": {
+          "file": "apps/nx-base/Dockerfile.current",
+          "push": true,
+          "metadata": {
+            "images": [
+              "prbservicesllc/nx-base"
+            ],
+            "tags": [
+              "current"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "tags": []
 }
