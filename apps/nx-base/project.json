@@ -8,7 +8,6 @@
       "executor": "@nx-tools/nx-container:build",
       "options": {
         "engine": "docker",
-        "load": true,
         "metadata": {
           "images": [
             "prbservicesllc/nx-base"
@@ -27,7 +26,6 @@
       "configurations": {
         "lts": {
           "file": "apps/nx-base/Dockerfile.lts",
-          "push": true,
           "metadata": {
             "images": [
               "prbservicesllc/nx-base"
@@ -39,7 +37,6 @@
         },
         "current": {
           "file": "apps/nx-base/Dockerfile.current",
-          "push": true,
           "metadata": {
             "images": [
               "prbservicesllc/nx-base"
