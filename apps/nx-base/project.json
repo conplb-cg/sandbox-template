@@ -9,21 +9,40 @@
       "options": {
         "engine": "docker",
         "metadata": {
-          "images": [
-            "prbservicesllc/nx-base"
+          "labels": [
+            "org.opencontainers.image.title=Nx-Base",
+            "org.opencontainers.image.description=Nx-Base Image",
+            "org.opencontainers.image.vendor=PRB Services LLC"
           ],
+          "images": [],
           "no-cache": true,
-          "tags": [
-            "nx-base",
-            "type=schedule",
-            "type=ref,event=branch",
-            "type=ref,event=tag",
-            "type=ref,event=pr",
-            "type=sha,prefix=sha-"
-          ]
+          "tags": []
         }
       },
       "configurations": {
+        "development": {
+          "file": "apps/nx-base/Dockerfile.lts",
+          "metadata": {
+            "labels": [
+              "org.opencontainers.image.title=Nx-Base",
+              "org.opencontainers.image.description=Nx-Base Image",
+              "org.opencontainers.image.vendor=PRB Services LLC"
+            ],
+            "images": [
+              "nx-base"
+            ],
+            "tags": [
+              "type=schedule",
+              "type=ref,event=branch",
+              "type=ref,event=tag",
+              "type=ref,event=pr",
+              "type=semver,pattern={{version}}",
+              "type=semver,pattern={{major}}.{{minor}}",
+              "type=semver,pattern={{major}}",
+              "type=sha"
+            ]
+          }
+        },
         "lts": {
           "file": "apps/nx-base/Dockerfile.lts",
           "metadata": {
